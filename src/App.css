@@ -1,5 +1,7 @@
 .Site-wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -16,16 +18,76 @@
 
 .Site-title {
   font-size: 5rem;
-  font-family: 'Permanent Marker';
+  font-family: 'Oswald';
 }
 
 .My-info {
-  font-family: 'Permanent Marker';
+  font-family: 'Oswald';
 }
-.My-info h1 {
-  color: indigo;
-}
+
 
 .My-intro {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+.My-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 100px;
+}
+.My-portfolio h1 {
+  width: 100%;
+}
+.project {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.container {
+  height: 500px;
+  width: 400px;
+}
+.container img {
+  width: auto;
+  height: 500px;
+}
+#aloha {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+#instanews {
+  border-left:  1px solid black;
+  border-bottom:  1px solid black;
+}
+#inhabitent {
+  border-right: 1px solid black;
+  border-top:  1px solid black;
+  padding-top: 5%;
+}
+#qod {
+  border-left:  1px solid black;
+  border-top:  1px solid black;
+  padding-top: 5%;
+}
+
+.Adventures {
+  display: flex;
+  margin: 0 100px;
+}
+.Cycling, .Fishing {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.Cycling img {
+  height: 600px;
+  width: auto;
+}
+.Fishing img {
+  height: 600px;
+  width: auto;
 }
