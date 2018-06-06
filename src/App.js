@@ -15,7 +15,7 @@ class App extends Component {
         
         <header className="Site-header">
           <h1 className="Site-title">Wes deLange</h1>
-          <nav>
+          <nav className="nav-menu">
             <a>About</a>
             <a>Portfolio</a>
             <a>Adventures</a>
@@ -23,7 +23,7 @@ class App extends Component {
           </nav>
         </header>
         
-        <div className="My-info"> 
+        <div className="About"> 
           <h1>About Me</h1>
           <h3>Currently studying Web Development at RED Academy</h3>
           <p className="My-intro">
@@ -94,7 +94,6 @@ class App extends Component {
               In 2017 I rode all across Britsih Columbia, Yukon and Alaska. Camping in the wilderness as much as possible.
             </p>
               <img src={Bike} alt="Bike"/>
-
           </div>
 
           <div className="Fishing">
@@ -105,10 +104,15 @@ class App extends Component {
               This adventure involved working at a world class Steelhead Lodge in remote Northern BC.
             </p>
               <img src={Fish} alt="Fish"/>
-
           </div>
           
         </div>
+
+        <footer className="Site-footer">
+          <h1>Contact</h1>
+          <h2>By Phone: 416-333-6416</h2>
+          <h2>By Email: wes.delange@gmail.com</h2>
+        </footer>
 
       </div>// site wrapper 
     );

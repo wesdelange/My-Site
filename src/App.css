@@ -12,17 +12,27 @@
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
   
 }
 
 .Site-title {
+  width: 50%;
   font-size: 5rem;
   font-family: 'Oswald';
+  text-align: left;
+}
+.nav-menu {
+  width: 50%;
+}
+.nav-menu a {
+  margin: 0 5%;
+  font-size: 1.5rem;
 }
 
-.My-info {
+.About {
   font-family: 'Oswald';
+  height: 500px;
+  padding-top: 10%;
 }
 
 
@@ -33,6 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 100px;
+  padding-bottom: 5%;
 }
 .My-portfolio h1 {
   width: 100%;
@@ -74,13 +85,23 @@
 .Adventures {
   display: flex;
   margin: 0 100px;
+  padding-bottom: 10%;
 }
-.Cycling, .Fishing {
+.Cycling {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 5%;
+  border-right: 1px solid black;
+}
+.Fishing {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+  border-left: 1px solid black;
 }
 
 .Cycling img {
@@ -90,4 +111,12 @@
 .Fishing img {
   height: 600px;
   width: auto;
+}
+
+.Site-footer {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
