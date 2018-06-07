@@ -1,10 +1,5 @@
-.Site-wrapper {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
 
-
+/* Header */
 .Site-header {
   background-color: #222;
   height: 150px;
@@ -28,17 +23,32 @@
   margin: 0 5%;
   font-size: 1.5rem;
 }
+/* end of Header */
 
+/* About */
 .About {
   font-family: 'Oswald';
-  height: 500px;
-  padding-top: 10%;
-}
+  margin: 100px 200px;
+  display: flex;
+  flex-direction: column;
 
+}
+.About h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+.About h2 {
+  font-size: 2rem;
+  margin: 0;
+}
 
 .My-intro {
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5rem;
 }
+/* end of about */
+
+/* Portfolio */
 .My-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -47,6 +57,10 @@
 }
 .My-portfolio h1 {
   width: 100%;
+  font-size: 4rem;
+}
+.My-portfolio h2 {
+  font-size: 2rem;
 }
 .project {
   width: 50%;
@@ -81,7 +95,9 @@
   border-top:  1px solid black;
   padding-top: 5%;
 }
+/* end of portfolio */
 
+/* Adventures */
 .Adventures {
   display: flex;
   margin: 0 100px;
@@ -112,7 +128,9 @@
   height: 600px;
   width: auto;
 }
+/* end of Adventures */
 
+/* Footer */
 .Site-footer {
   background-color: #222;
   padding: 20px;
