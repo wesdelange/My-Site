@@ -2,19 +2,22 @@
 /* Header */
 .Site-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
   display: flex;
   align-items: center;
   
 }
-
+/*.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}*/
 .Site-title {
   width: 50%;
   font-size: 5rem;
   font-family: 'Oswald';
   text-align: left;
+  padding-left: 5%;
 }
 .nav-menu {
   width: 50%;
@@ -22,30 +25,23 @@
 .nav-menu a {
   margin: 0 5%;
   font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
 }
 /* end of Header */
 
 /* About */
 .About {
   font-family: 'Oswald';
-  margin: 100px 200px;
+  margin: 100px 100px;
   display: flex;
   flex-direction: column;
+}
 
-}
-.About h1 {
-  font-size: 4rem;
-  margin: 0;
-}
 .About h2 {
-  font-size: 2rem;
   margin: 0;
 }
 
-.My-intro {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.5rem;
-}
 /* end of about */
 
 /* Portfolio */
@@ -57,10 +53,12 @@
 }
 .My-portfolio h1 {
   width: 100%;
-  font-size: 4rem;
 }
-.My-portfolio h2 {
-  font-size: 2rem;
+.My-portfolio h3 {
+  padding: 0 10%;
+}
+.My-portfolio p {
+  font-size: 1.5rem;
 }
 .project {
   width: 50%;
@@ -128,13 +126,16 @@
   height: 600px;
   width: auto;
 }
+
 /* end of Adventures */
 
 /* Footer */
 .Site-footer {
   background-color: #222;
-  padding: 20px;
+  padding: 20px 100px;
   color: white;
+  text-align: left;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }

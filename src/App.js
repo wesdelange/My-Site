@@ -7,23 +7,41 @@ import Qod from './images/qod-screenshot.png';
 import Bike from './images/bc-kamloops.jpg';
 import Fish from './images/fish.jpg';
 
+/*
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+*/
+
+
+
+
 class App extends Component {
   render() {
     return (
       <div className="Site-wrapper">
         
-        <header className="Site-header">
+        <header className="Site-header" id="myHeader">
           <h1 className="Site-title">Wes deLange</h1>
           <nav className="nav-menu">
-            <a>About</a>
-            <a>Portfolio</a>
-            <a>Adventures</a>
-            <a>Contact</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#adventures">Adventures</a>
+            <a href="#contact">Contact</a>
           </nav>
         </header>
         
         <div className="About"> 
-          <h1>About Me</h1>
+          <a name="about"><h1>About Me</h1></a>
           <h2>Currently studying Web Development at RED Academy</h2>
           <p className="My-intro">
               My journey into the world of web development has just begun.
@@ -40,9 +58,9 @@ class App extends Component {
           </p>
         </div>
 
-        
+        <a name="portfolio"><h1>Portfolio</h1></a>
         <div className="My-portfolio">
-        <h1>Portfolio</h1>
+        
           
           <div  id="aloha" className="project">
             <h2>Aloha</h2>
@@ -51,8 +69,8 @@ class App extends Component {
                 <img src={Aloha} alt="Aloha"/>
               </a>
             </div>
-            <h3>Responsive webpage for mock fashion company</h3>
-            <a href="https://github.com/wesdelange/Aloha">View code on GitHub</a>
+            <h3>Responsive website for mock fashion company, designed for three different screen widths</h3>
+            <a href="https://github.com/wesdelange/Aloha"><p>View code on GitHub</p></a>
           </div>
           
           <div id="instanews" className="project">
@@ -62,8 +80,8 @@ class App extends Component {
                 <img src={Instanews} alt="Instanews"/>
               </a>
             </div>
-            <h3>Responsive webpage displaying today's top news stories fetched from New York Times API</h3>
-            <a href="https://github.com/wesdelange/instanews">View code on GitHub</a>
+            <h3>News website displaying today's top news stories fetched from New York Times API, designed mobile-first</h3>
+            <a href="https://github.com/wesdelange/instanews"><p>View code on GitHub</p></a>
           </div>
 
           <div id="inhabitent" className="project">
@@ -73,8 +91,8 @@ class App extends Component {
                 <img src={Inhabitent} alt="Inhabitent"/>
               </a>
             </div>
-            <h3>Wordpress webpage with custom theme and plug-ins</h3>
-            <a href="https://github.com/wesdelange/inhabitent">View code on GitHub</a>
+            <h3>Wordpress website with customized theme and custom plug-ins, utilizes PHP and JavaScript</h3>
+            <a href="https://github.com/wesdelange/inhabitent"><p>View code on GitHub</p></a>
           </div>
 
           <div id="qod" className="project">
@@ -84,13 +102,13 @@ class App extends Component {
                 <img src={Qod} alt="Quotes-on-Dev"/>
               </a>
             </div>
-            <h3>Responsive Custom Wordpress webpage that utilizes Rest API to display random quotes</h3>
-            <a href="https://github.com/wesdelange/inhabitent">View code on GitHub</a>
+            <h3>Custom Wordpress website that utilizes Rest API to display random quotes, designed mobile-first</h3>
+            <a href="https://github.com/wesdelange/inhabitent"><p>View code on GitHub</p></a>
           </div>
 
         </div>
 
-        <h1>Adventures</h1>
+        <a name="adventures"><h1>Adventures</h1></a>
         <div className="Adventures">
 
           
@@ -117,9 +135,9 @@ class App extends Component {
         </div>
 
         <footer className="Site-footer">
-          <h1>Contact</h1>
-          <h2>By Phone: 416-333-6416</h2>
-          <h2>By Email: wes.delange@gmail.com</h2>
+        <a name="contact"><h2>Contact Me:</h2></a>
+          <h3>By Phone: 416-333-6416</h3>
+          <h3>By Email: wes.delange@gmail.com</h3>
         </footer>
 
       </div>// site wrapper 
