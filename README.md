@@ -1,3 +1,9 @@
+## Personal Webpage using React
+
+Expermenting with design, trying to make a simple, straight forward webpage that showcases my projects at RED Academy.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
